@@ -71,12 +71,34 @@ void SHZEditor::resized()
 }
 
 // UI <-> plugin protocol: the page requests /shz/... and the plugin answers with JSON.
-std::optional<juce::WebBrowserComponent::Resource> SHZEditor::handleApi (const juce::String& path)
+std::optional<juce::WebBrowserComponent::Resource> 
+void SHZEditor::saveUserPreset()
+{
+    auto file = juce::File::getSpecialLocation(juce::File::userDocumentsDirectory)
+        .getChildFile("SISHHIN-HZ-MACHINE")
+        .getChildFile("UserPreset.xml");
+    file.getParentDirectory().createDirectory();
+    auto state = proc.apvts.copyState();
+    if (auto xml = state.createXml())
+        xml->writeTo(file);
+}
+
+void SHZEditor::loadUserPreset()
+{
+    auto file = juce::File::getSpecialLocation(juce::File::userDocumentsDirectory)
+        .getChildFile("SISHHIN-HZ-MACHINE")
+        .getChildFile("UserPreset.xml");
+    if (file.existsAsFile())
+        if (auto xml = juce::parseXML(file))
+            proc.apvts.replaceState(juce::ValueTree::fromXml(*xml));
+}
+
+SHZEditor::handleApi (const juce::String& path)
 {
     const auto parts = juce::StringArray::fromTokens (path.fromFirstOccurrenceOf ("/shz/", false, false), "/", "");
     const auto cmd = parts[0];
 
-    if (cmd == "set" && parts.size() >= 3)
+    if (cmd == "savePreset")\n    { saveUserPreset(); }\n    else if (cmd == "loadPreset")\n    { loadUserPreset(); }\n    else if if (cmd == "set" && parts.size() >= 3)
     {
         setParamValue (parts[1], parts[2].getFloatValue());
     }

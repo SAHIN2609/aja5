@@ -15,7 +15,7 @@ public:
 private:
     std::optional<juce::WebBrowserComponent::Resource> getResource (const juce::String& url);
     std::optional<juce::WebBrowserComponent::Resource> handleApi (const juce::String& path);
-    void setParamValue (const juce::String& id, float v);
+    void setParamValue (const juce::String& id, float v);\n    void saveUserPreset();\n    void loadUserPreset();
 
     SHZProcessor& proc;
 
