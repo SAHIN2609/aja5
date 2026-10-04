@@ -186,6 +186,21 @@ body:before{background:repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 
 @media(max-width:900px){.grille{height:360px}.amp-logo-wrap{width:92%;height:92%}}
 @media(max-width:600px){.grille{height:250px}.panel{padding-top:28px}.panel-sigil{display:none}}
 
+
+select#preset, #preset {
+  color:#f4f6fb !important;
+  background:#090b10 !important;
+  color-scheme:dark;
+  border-color:rgba(255,255,255,.18);
+}
+select#preset option, #preset option {
+  background:#090b10 !important;
+  color:#f4f6fb !important;
+}
+select#preset:focus, #preset:focus {
+  outline:none;
+  border-color:#b56cff;
+}
 </style>
 <body>
 <div id="err"></div>

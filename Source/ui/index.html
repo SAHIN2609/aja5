@@ -194,6 +194,21 @@ body:before{background:repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 
 @media(max-width:900px){.grille{height:360px}.amp-logo-wrap{width:92%;height:92%}}
 @media(max-width:600px){.grille{height:250px}.panel{padding-top:28px}.panel-sigil{display:none}}
 
+
+select#preset, #preset {
+  color:#f4f6fb !important;
+  background:#090b10 !important;
+  color-scheme:dark;
+  border-color:rgba(255,255,255,.18);
+}
+select#preset option, #preset option {
+  background:#090b10 !important;
+  color:#f4f6fb !important;
+}
+select#preset:focus, #preset:focus {
+  outline:none;
+  border-color:#b56cff;
+}
 </style>
 </head>
 <body>
@@ -504,6 +519,14 @@ add('SPECIAL',[
 ['Tape Breaker',{mode:1,gain:5.5,tight:3.3,bass:4.1,mid:6.5,treble:4.1,pres:3.8,depth:2.9,cab:5,mic:2,e1:-2,e2:.5,e3:2.2,e4:-2,e5:-4,hpf:120,lpf:5200}],
 ['Glass Boost',{mode:0,gain:3.1,tight:3.2,bass:4.8,mid:6.5,treble:6.4,pres:6.3,depth:3.2,cab:1,mic:0,bston:1,b_gain:5.5,b_tone:6.6,b_level:5.8}]
 ]);
+
+add('WAH MACHINES',[
+['Cry Baby Classic',{mode:3,gain:6.5,tight:5.5,bass:5,mid:6.5,treble:6.8,pres:7,cab:2,mic:1,whon:1,wh_type:0,wh_range:8,wh_q:5.5}],
+['Vocal Wah Solo',{mode:3,gain:7,tight:5,bass:4.8,mid:7,treble:6.2,pres:7.5,cab:1,mic:0,whon:1,wh_type:1,wh_range:9,wh_q:7}],
+['Funk Envelope Wah',{mode:0,gain:3.8,tight:3,bass:5.5,mid:6,treble:7,pres:6,cab:0,mic:1,whon:1,wh_type:2,wh_range:6,wh_q:8}],
+['Metal Sweep Wah',{mode:2,gain:8,tight:8,bass:5.8,mid:4.5,treble:7.5,pres:8,cab:3,mic:2,whon:1,wh_type:3,wh_range:10,wh_q:9}]
+]);
+
 // Exactly six synth presets: the rest of the bank is guitar/amp focused.
 add('SYNTH (6)',[
 ['Neon Blade',{mode:2,gain:6.2,tight:7.0,bass:4.0,mid:5.8,treble:5.8,pres:6.1,cab:2,mic:0,drvon:1,d_drive:3.8,d_tight:7.5,d_tone:5.8,d_level:5.5,synon:1,synmix:.78,synvoice:2,synwave:0,synsub:.35,syncut:3600,synres:.22,synatt:4,syndec:140,synsus:.62,synrel:170,syntrk:.82,synstab:.82,syndrive:2.8,synspread:.25,synmod:.3,synosc2:.72,syndetune:8,synpw:.5,synfilter:0,synenvamt:.65,synlforate:4,synlfodepth:.14,synglide:18,synnoise:.015,synarpon:1,synarprate:7.5,synarpgate:.62,synarpmode:0,synarpOct:2,synarpswing:12}],
