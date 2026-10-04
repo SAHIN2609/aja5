@@ -73,3 +73,24 @@ The ABYSS emblem is integrated as an engraved metal treatment across the interfa
 - Added guitar-driven synth arpeggiator with rate, gate, pattern, octave and swing controls.
 - Added modern AutoTune modes with transition smoothing and vibrato preservation.
 - Updated the matching forged-metal UI controls.
+
+## v1.10.0 Interface, Wah, MIDI & Guitar AutoTune
+
+- **Embedding fixed**: real HTML document head with `charset=utf-8` (no more mangled
+  arrows/ellipsis), viewport meta for correct WebView layout.
+- **A/B compare fixed**: two independent full snapshots, seeded on load, plus a
+  `⇄` copy button and live status readout.
+- **Preset selection fixed**: effect bypass is reset on load, the active A/B slot is
+  kept in sync, and the category is shown while browsing.
+- **New HZ WAH pedal**: Classic / Vocal / Funk modes with Position, Rate, Depth,
+  Resonance and Mix; CC11 expression override.
+- **New MIDI options**: MIDI on/off, channel, mod-wheel target (Wah / Filter /
+  Drive), mod amount and note-to-synth; CC1/CC11 modulation.
+- **Guitar AutoTune**: Guitar Mode with Glide, Bend Follow and Formant, three new
+  scale maps (Harmonic Minor, Minor Pentatonic, Blues) and bend-following vibrato.
+- **Arpeggiator**: Trill, Pedal and Up/Down patterns, Steps and Accent, and note
+  latching so patterns do not stutter.
+- **GitHub Actions** now builds and packages the VST3 for Windows x64, macOS
+  universal and Linux x64, publishing a release ZIP per platform on tags.
+
+See `docs/RELEASE-NOTES-1.10.0.md` for details.

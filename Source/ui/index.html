@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="format-detection" content="telephone=no">
+<title>SISHHIN HZ MACHINE</title>
 <style>
 :root{
   --bg:#050609;--bg2:#080a0f;--panel:rgba(15,18,25,.78);--panel2:rgba(22,26,35,.72);
@@ -29,7 +37,7 @@ button:focus-visible,select:focus-visible,[role=slider]:focus-visible{outline:1p
 .top-left,.top-right{display:flex;align-items:center;gap:10px;position:relative;z-index:1}.top-right{justify-content:flex-end}.top-left:before{content:"HZM // 01";font-size:9px;letter-spacing:.22em;color:var(--muted2);margin-right:2px}
 .brand{display:flex;align-items:center;gap:10px;min-width:130px}.brand-mark{width:34px;height:34px;border-radius:10px;border:1px solid rgba(181,108,255,.45);background:radial-gradient(circle at 35% 30%,#c58dff,#35135a 55%,#0c0910 80%);box-shadow:0 0 24px rgba(181,108,255,.22),inset 0 1px 0 #fff2;display:grid;place-items:center;font-size:11px;font-weight:800;letter-spacing:.08em}.brand-copy b{display:block;font-size:11px;letter-spacing:.22em}.brand-copy span{display:block;font-size:8px;color:var(--muted);letter-spacing:.16em;margin-top:2px}
 .top .mid{position:relative;z-index:1;display:flex;align-items:center;gap:8px;min-width:0}.top .mid .preset-frame{display:flex;align-items:center;gap:7px;flex:1;min-width:0}
-.top .mid #preset{width:100%;min-width:0;height:36px;padding:0 12px;border:1px solid rgba(255,255,255,.14);border-radius:8px;background:#0b0d12;color:#f4f6fb;text-align:left;font-size:11px;font-weight:600;letter-spacing:.05em;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 6px 18px rgba(0,0,0,.22);appearance:auto;-webkit-appearance:auto}.top .mid #preset:hover{border-color:rgba(181,108,255,.55);background:#10131a}.top .mid #prev,.top .mid #next{width:34px;height:34px;border-radius:7px;font-size:18px;color:#cbd0da;flex:0 0 auto}.preset-count{font-size:8px;letter-spacing:.14em;color:var(--muted2);white-space:nowrap;padding:0 3px}.ab{display:flex;gap:4px;margin-left:2px}.ab button{width:30px;height:30px;padding:0;border-radius:7px;font-size:9px;font-weight:800;color:var(--muted)}.ab button.on{color:#fff;border-color:rgba(181,108,255,.7);background:rgba(181,108,255,.16);box-shadow:0 0 18px rgba(181,108,255,.12)}
+.top .mid #preset{width:100%;min-width:0;height:36px;padding:0 12px;border:1px solid rgba(255,255,255,.14);border-radius:8px;background:#0b0d12;color:#f4f6fb;text-align:left;font-size:11px;font-weight:600;letter-spacing:.05em;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 6px 18px rgba(0,0,0,.22);appearance:auto;-webkit-appearance:auto}.top .mid #preset:hover{border-color:rgba(181,108,255,.55);background:#10131a}.top .mid #prev,.top .mid #next{width:34px;height:34px;border-radius:7px;font-size:18px;color:#cbd0da;flex:0 0 auto}.preset-count{font-size:8px;letter-spacing:.14em;color:var(--muted2);white-space:nowrap;padding:0 3px}.ab{display:flex;gap:4px;margin-left:2px;align-items:center}.ab button{width:30px;height:30px;padding:0;border-radius:7px;font-size:9px;font-weight:800;color:var(--muted)}.ab button.on{color:#fff;border-color:rgba(181,108,255,.7);background:rgba(181,108,255,.16);box-shadow:0 0 18px rgba(181,108,255,.12)}.ab .ab-copy{width:26px;font-size:12px;color:var(--accent2)}.ab-note{font-size:8px;letter-spacing:.12em;color:var(--muted2);white-space:nowrap}
 .top .k{transform:scale(.84);transform-origin:right center}.top-right .k{transform-origin:right center}.top-left .k{transform-origin:left center}
 /* glass navigation */
 .nav{display:flex;justify-content:center;gap:5px;padding:5px;margin-bottom:12px;border:1px solid var(--line2);border-radius:13px;background:rgba(10,12,17,.68);box-shadow:0 12px 32px #0007,inset 0 1px 0 #fff1;backdrop-filter:blur(18px)}
@@ -43,7 +51,7 @@ button:focus-visible,select:focus-visible,[role=slider]:focus-visible{outline:1p
 .grille:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(255,255,255,.06),transparent 34%),repeating-linear-gradient(105deg,rgba(255,255,255,.018) 0 2px,transparent 2px 8px),linear-gradient(180deg,#050608aa,#11131a55 48%,#020305cc);pointer-events:none;z-index:2}
 .grille:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 0 19%,rgba(255,255,255,.09) 30%,transparent 38%,transparent 63%,rgba(255,255,255,.055) 75%,transparent 82%),radial-gradient(circle at 50% 52%,transparent 0 24%,rgba(0,0,0,.15) 45%,rgba(0,0,0,.72) 100%);z-index:7}
 .grille svg{position:absolute;inset:0;width:100%;height:100%;display:block;transition:opacity .25s;z-index:3;opacity:.58}.amp-logo-wrap{position:absolute;z-index:6;left:50%;top:50%;width:min(74%,520px);aspect-ratio:1/1;transform:translate(-50%,-50%);display:grid;place-items:center;pointer-events:none}.amp-logo-wrap:before{content:"";position:absolute;inset:8%;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),rgba(181,108,255,.08) 26%,transparent 65%);filter:blur(18px);box-shadow:0 0 70px var(--glow)}.amp-logo{position:relative;width:100%;height:100%;object-fit:contain;filter:brightness(.82) contrast(1.2) drop-shadow(0 0 3px #fff9) drop-shadow(0 0 12px var(--glow)) drop-shadow(0 0 32px var(--glow));mix-blend-mode:screen;opacity:.92}.amp-label{position:absolute;z-index:6;left:22px;top:20px;font-size:8px;letter-spacing:.34em;color:#e8ebf0;text-transform:uppercase;opacity:.72}.amp-model{position:absolute;z-index:6;right:22px;top:20px;font-size:8px;letter-spacing:.22em;color:var(--glow);text-transform:uppercase;text-shadow:0 0 12px var(--glow)}.amp-vents{position:absolute;z-index:6;left:22px;right:22px;bottom:18px;display:flex;justify-content:space-between;pointer-events:none}.amp-vents i{display:block;width:82px;height:4px;border-radius:4px;background:#020304;box-shadow:inset 0 1px 0 #fff1,0 0 10px #000}.amp-vents i:nth-child(2){width:180px;background:linear-gradient(90deg,transparent,#0a0c10 15%,#0a0c10 85%,transparent)}
-.panel{position:relative;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 2px;margin:12px;padding:20px 16px 14px;border:1px solid #3a3d44;border-radius:6px;background:var(--pb);box-shadow:inset 0 1px 0 #fff1,inset 0 0 35px #0009,0 14px 32px #0008}.panel:before{content:"SISHHIN // ABYSS SIGNATURE";position:absolute;left:16px;top:7px;font-size:7px;letter-spacing:.25em;color:var(--pl);opacity:.75}.panel:after{content:"1.8 // HAND BUILT TONE";position:absolute;right:16px;top:7px;font-size:7px;letter-spacing:.16em;color:var(--pl);opacity:.65}.badge{font-weight:900;letter-spacing:.24em;font-size:14px;margin-right:10px;color:#fff;padding:7px 11px;border:1px solid #777d87;border-radius:3px;background:linear-gradient(180deg,#25282e,#090a0d);box-shadow:inset 0 1px 0 #fff2,0 0 18px rgba(181,108,255,.08)}.panel .k{width:68px}.panel .kl{color:var(--pl)}.panel .kv{color:var(--pk)}.panel .ch button{color:var(--pk);border-color:#666c75;background:#0a0c10}.panel .ch button.on{color:var(--glow);border-color:var(--glow);background:rgba(181,108,255,.1);box-shadow:0 0 14px rgba(181,108,255,.12)}.jewel{width:9px;height:9px;border-radius:50%;background:var(--glow);box-shadow:0 0 22px var(--glow),0 0 5px #fff8;margin-left:8px}.feet{display:flex;justify-content:space-between;padding:0 30px 13px}.feet i{width:70px;height:10px;border-radius:0 0 5px 5px;background:#020304;box-shadow:0 4px 9px #000}
+.panel{position:relative;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 2px;margin:12px;padding:20px 16px 14px;border:1px solid #3a3d44;border-radius:6px;background:var(--pb);box-shadow:inset 0 1px 0 #fff1,inset 0 0 35px #0009,0 14px 32px #0008}.panel:before{content:"SISHHIN // ABYSS SIGNATURE";position:absolute;left:16px;top:7px;font-size:7px;letter-spacing:.25em;color:var(--pl);opacity:.75}.panel:after{content:"1.10 // HAND BUILT TONE";position:absolute;right:16px;top:7px;font-size:7px;letter-spacing:.16em;color:var(--pl);opacity:.65}.badge{font-weight:900;letter-spacing:.24em;font-size:14px;margin-right:10px;color:#fff;padding:7px 11px;border:1px solid #777d87;border-radius:3px;background:linear-gradient(180deg,#25282e,#090a0d);box-shadow:inset 0 1px 0 #fff2,0 0 18px rgba(181,108,255,.08)}.panel .k{width:68px}.panel .kl{color:var(--pl)}.panel .kv{color:var(--pk)}.panel .ch button{color:var(--pk);border-color:#666c75;background:#0a0c10}.panel .ch button.on{color:var(--glow);border-color:var(--glow);background:rgba(181,108,255,.1);box-shadow:0 0 14px rgba(181,108,255,.12)}.jewel{width:9px;height:9px;border-radius:50%;background:var(--glow);box-shadow:0 0 22px var(--glow),0 0 5px #fff8;margin-left:8px}.feet{display:flex;justify-content:space-between;padding:0 30px 13px}.feet i{width:70px;height:10px;border-radius:0 0 5px 5px;background:#020304;box-shadow:0 4px 9px #000}
 /* knob system */
 .k,.f{display:inline-flex;flex-direction:column;align-items:center;gap:3px;width:68px;cursor:ns-resize;touch-action:none}.kw{width:52px;height:52px;position:relative}.kr{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from -135deg,var(--glow) 0 var(--a,0deg),rgba(255,255,255,.1) var(--a,0deg) 270deg,transparent 270deg);-webkit-mask:radial-gradient(circle,transparent 22px,#000 23px);mask:radial-gradient(circle,transparent 22px,#000 23px);filter:drop-shadow(0 0 5px rgba(181,108,255,.15))}.kb{position:absolute;inset:7px;border-radius:50%;background:radial-gradient(circle at 32% 26%,#505662,#11141a 62%,#080a0d 100%);border:1px solid #000;box-shadow:0 4px 9px #000b,inset 0 1px 0 #fff2,inset 0 -8px 16px #0007}.kb:before{content:"";position:absolute;inset:3px;border-radius:50%;background:repeating-conic-gradient(#fff0 0 10deg,#ffffff0c 10deg 11deg,#fff0 11deg 22deg)}.kb i{position:absolute;left:50%;top:3px;width:2px;height:10px;margin-left:-1px;background:#fff;border-radius:2px;box-shadow:0 0 5px #fff6}.kl{font-size:8px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;text-align:center}.kv{font-size:9px;color:#f1f3f7;min-height:13px;font-variant-numeric:tabular-nums}.f{width:58px}.ft{width:6px;height:118px;background:#030405;border:1px solid var(--line);position:relative;border-radius:4px;margin:7px 0}.ft b{position:absolute;left:50%;width:30px;height:16px;margin-left:-15px;margin-bottom:-8px;background:linear-gradient(#4c535e,#1a1e25);border:1px solid #000;border-radius:4px;box-shadow:0 3px 7px #000}.ft b:after{content:"";position:absolute;left:4px;right:4px;top:7px;height:1px;background:#fff}
 .ch{display:inline-flex}.ch button{padding:6px 9px;font-size:9px;letter-spacing:.07em}.ch button+button{margin-left:-1px}.signal-flow{display:flex;flex-wrap:wrap;gap:6px}.signal-flow span{padding:6px 9px;border:1px solid var(--line);border-radius:7px;font-size:9px;letter-spacing:.08em;color:var(--muted);background:rgba(0,0,0,.18)}.signal-flow span.active{color:#fff;border-color:rgba(111,220,255,.42);background:rgba(111,220,255,.07);box-shadow:inset 0 -1px 0 rgba(111,220,255,.5)}.tg{display:inline-flex;flex-direction:column;align-items:center;gap:4px}.tg button{padding:5px 10px;font-size:9px}.tg button.on{border-color:var(--accent);color:#fff;background:rgba(181,108,255,.14)}
@@ -187,6 +195,7 @@ body:before{background:repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 
 @media(max-width:600px){.grille{height:250px}.panel{padding-top:28px}.panel-sigil{display:none}}
 
 </style>
+</head>
 <body>
 <div id="err"></div>
 <div class="app">
@@ -197,7 +206,7 @@ body:before{background:repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 
     </div>
     <div class="mid">
       <div class="preset-frame"><button id="prev" title="Previous preset">‹</button><select id="preset" title="Preset browser"></select><button id="next" title="Next preset">›</button><span id="presetCount" class="preset-count">158 PRESETS</span></div>
-      <div class="ab"><button id="ab-a" class="on">A</button><button id="ab-b">B</button></div>
+      <div class="ab"><button id="ab-a" class="on" title="Recall snapshot A">A</button><button id="ab-b" title="Recall snapshot B">B</button><button id="abCopy" class="ab-copy" title="Copy the current snapshot to the other slot">⇄</button><span id="abNote" class="ab-note">A/B: A</span></div>
     </div>
     <div class="top-right"><div data-k="out"></div></div>
   </div>
@@ -226,13 +235,14 @@ body:before{background:repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 
         <div class="kl" style="text-align:left;margin-top:12px">OSCILLATOR SHAPE</div><div class="syn-wave" id="synwave"></div>
         <div class="kl" style="text-align:left">VOICE ARCHETYPE</div><div class="syn-voice" id="synvoice"></div>
         <div class="syn-grid"><div data-k="synmix"></div><div data-k="synsub"></div><div data-k="syndrive"></div><div data-k="synspread"></div><div data-k="syncut"></div><div data-k="synres"></div><div data-k="syntrk"></div><div data-k="synstab"></div></div>
-        <div class="syn-advanced"><div data-k="synosc2"></div><div data-k="syndetune"></div><div data-k="synpw"></div><div data-k="synfilter"></div><div data-k="synenvamt"></div><div data-k="synlforate"></div><div data-k="synlfodepth"></div><div data-k="synglide"></div><div data-k="synnoise"></div></div><div class="arp-bay"><div class="arp-head"><div><b>ABYSS ARPEGGIATOR</b><span>GUITAR-DRIVEN STEP SEQUENCER</span></div><div data-tg="synarpon" data-l="ARP"></div></div><div class="arp-grid"><div data-k="synarprate"></div><div data-k="synarpgate"></div><div data-k="synarpmode"></div><div data-k="synarpOct"></div><div data-k="synarpswing"></div></div><div class="arp-lights" id="arpLights"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="syn-advanced"><div data-k="synosc2"></div><div data-k="syndetune"></div><div data-k="synpw"></div><div data-k="synfilter"></div><div data-k="synenvamt"></div><div data-k="synlforate"></div><div data-k="synlfodepth"></div><div data-k="synglide"></div><div data-k="synnoise"></div></div><div class="arp-bay"><div class="arp-head"><div><b>ABYSS ARPEGGIATOR</b><span>GUITAR-DRIVEN STEP SEQUENCER</span></div><div data-tg="synarpon" data-l="ARP"></div></div><div class="arp-grid"><div data-k="synarprate"></div><div data-k="synarpgate"></div><div data-k="synarpmode"></div><div data-k="synarpOct"></div><div data-k="synarpswing"></div><div data-k="synarpsteps"></div><div data-k="synarpacc"></div></div><div class="arp-lights" id="arpLights"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
       </div>
       <div class="syn-card syn-side abyss-card">
         <div class="syn-head"><div><div class="syn-title">ENVELOPE</div><div class="syn-sub">PLAYABILITY // FILTER MOTION</div></div></div>
         <div class="syn-section"><h4>AMPLITUDE</h4><div class="syn-grid"><div data-k="synatt"></div><div data-k="syndec"></div><div data-k="synsus"></div><div data-k="synrel"></div></div></div>
         <div class="syn-section"><h4>VOICE</h4><div class="syn-grid"><div data-k="synmod"></div><div data-k="synoct"></div></div></div>
         <div class="syn-section"><h4>SIGNAL FLOW</h4><div class="signal-flow"><span class="active">GUITAR</span><span class="active">SYNTH</span><span>FILTER</span><span>DRIVE</span></div></div>
+        <div class="syn-section"><h4>MIDI</h4><div class="syn-grid"><div data-tg="midion" data-l="MIDI"></div><div data-k="midich"></div><div data-k="midiwheel"></div><div data-k="midiwheelamt"></div></div><div class="kl" style="text-align:left;margin-top:8px">NOTE SYNTH</div><div data-tg="midinote" data-l="MIDI NOTE"></div><div class="kl" style="text-align:left;line-height:1.7;margin-top:8px">Route an external keyboard or MIDI clip to play the synth directly. CC1 (mod wheel) drives the selected target; CC11 acts as a wah expression pedal.</div></div>
         <div class="syn-section"><div class="kl" style="text-align:left;line-height:1.8">A focused monophonic guitar synth: fast pitch tracking, controlled glide, resonant filtering, sub layer and playable modulation. The factory bank intentionally keeps synth presets limited to six signature voices.</div></div>
       </div>
     </div>
@@ -252,8 +262,9 @@ body:before{background:repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 
         <div class="tune-wheel" id="tuneWheel"><div class="tw-center"></div><div class="tw-ring"></div><span class="tw-mark m-0">-50</span><span class="tw-mark m-1">-25</span><span class="tw-mark m-2">0</span><span class="tw-mark m-3">+25</span><span class="tw-mark m-4">+50</span></div>
         <div class="tune-grid">
           <div class="tune-field"><label>KEY</label><div data-ch="atkey" data-n="C,C#,D,D#,E,F,F#,G,G#,A,A#,B"></div></div>
-          <div class="tune-field"><label>SCALE</label><div data-ch="atscale" data-n="MAJOR,NAT MINOR,DORIAN,MIXOLYDIAN,PHRYGIAN,PHRYGIAN DOM"></div></div>
+          <div class="tune-field"><label>SCALE</label><div data-ch="atscale" data-n="MAJOR,NAT MINOR,DORIAN,MIXOLYDIAN,PHRYGIAN,PHRYGIAN DOM,HARM MINOR,MIN PENT,BLUES"></div></div>
           <div data-k="atspeed"></div><div data-k="atamount"></div><div data-k="athuman"></div><div data-k="atmix"></div><div data-k="attrack"></div><div data-k="atmode"></div><div data-k="attrans"></div><div data-k="atvibrato"></div>
+          <div data-tg="atguitar" data-l="GUITAR MODE"></div><div data-k="atglide"></div><div data-k="atbend"></div><div data-k="atformant"></div>
         </div>
       </div>
       <div class="tune-side abyss-card">
@@ -268,7 +279,7 @@ body:before{background:repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 
 
   <div class="pane" id="p-eq"><div class="eqp abyss-card"><canvas id="eqc" width="1100" height="220"></canvas><div class="eqr" id="eqr"></div></div></div>
 
-  <div class="foot"><span class="foot-sigil"><img src="abyss_logo.png" alt="" draggable="false"></span><span style="opacity:.6">SISHHIN HZ MACHINE // ABYSS SIGNATURE 1.9</span><span>IN</span><div class="bar"><i id="m-in"></i></div><span>OUT</span><div class="bar"><i id="m-out"></i></div><span style="opacity:.5">48K / 64S</span></div>
+  <div class="foot"><span class="foot-sigil"><img src="abyss_logo.png" alt="" draggable="false"></span><span style="opacity:.6">SISHHIN HZ MACHINE // ABYSS SIGNATURE 1.10</span><span>IN</span><div class="bar"><i id="m-in"></i></div><span>OUT</span><div class="bar"><i id="m-out"></i></div><span style="opacity:.5">48K / 64S</span></div>
 </div>
 
 <script>
@@ -289,8 +300,10 @@ const D=[
 ['s_buzz','Buzz',0,10,6,'',.1],['s_res','Sympathy',0,10,5,'',.1],['s_tone','Tone',0,10,6,'',.1],['s_mix','Mix',0,10,7,'',.1],
 ['synon','On',0,1,0,'',1],['synmix','Mix',0,1,.75,'',.01],['synwave','Wave',0,4,1,'',1],['synsub','Sub',0,1,.35,'',.01],['syncut','Cutoff',80,12000,4200,' Hz',10],['synres','Resonance',0,1,.18,'',.01],
 ['synatt','Attack',.5,250,8,' ms',.5],['syndec','Decay',5,1000,120,' ms',1],['synsus','Sustain',0,1,.72,'',.01],['synrel','Release',10,1200,180,' ms',1],['synoct','Octave',-2,2,0,'',1],['syntrk','Tracking',0,1,.65,'',.01],['synstab','Stability',0,1,.65,'',.01],['syndrive','Drive',0,10,2,'',.1],['synspread','Spread',0,1,.22,'',.01],['synmod','Mod',0,1,.35,'',.01],
-['synvoice','Voice',0,7,2,'',1],['synosc2','Osc 2',0,1,.65,'',.01],['syndetune','Detune',-24,24,7,' cents',.1],['synpw','Pulse',.05,.95,.50,'',.01],['synfilter','Filter',0,2,0,'',1],['synenvamt','Env Amt',-1,1,.55,'',.01],['synlforate','LFO Rate',.1,12,5,' Hz',.1],['synlfodepth','LFO Depth',0,1,.18,'',.01],['synglide','Glide',0,250,25,' ms',1],['synnoise','Noise',0,1,.03,'',.01],['synarpon','ARP',0,1,0,'',1],['synarprate','ARP Rate',.5,20,6,' Hz',.1],['synarpgate','ARP Gate',.1,1,.72,'',.01],['synarpmode','ARP Pattern',0,3,0,'',1],['synarpOct','ARP Octaves',1,3,1,'',1],['synarpswing','ARP Swing',0,100,0,' %',1],
-['aton','On',0,1,0,'',1],['atkey','Key',0,11,0,'',1],['atscale','Scale',0,5,0,'',1],['atspeed','Speed',0,100,72,'',1],['atamount','Amount',0,100,92,' %',1],['athuman','Humanize',0,100,18,' %',1],['atmix','Mix',0,100,100,' %',1],['attrack','Tracking',0,1,.78,'',.01],['atmode','Mode',0,2,1,'',1],['attrans','Transition',0,100,42,' %',1],['atvibrato','Vibrato',0,100,58,' %',1],
+['synvoice','Voice',0,7,2,'',1],['synosc2','Osc 2',0,1,.65,'',.01],['syndetune','Detune',-24,24,7,' cents',.1],['synpw','Pulse',.05,.95,.50,'',.01],['synfilter','Filter',0,2,0,'',1],['synenvamt','Env Amt',-1,1,.55,'',.01],['synlforate','LFO Rate',.1,12,5,' Hz',.1],['synlfodepth','LFO Depth',0,1,.18,'',.01],['synglide','Glide',0,250,25,' ms',1],['synnoise','Noise',0,1,.03,'',.01],['synarpon','ARP',0,1,0,'',1],['synarprate','ARP Rate',.5,20,6,' Hz',.1],['synarpgate','ARP Gate',.1,1,.72,'',.01],['synarpmode','ARP Pattern',0,6,0,'',1],['synarpOct','ARP Octaves',1,3,1,'',1],['synarpswing','ARP Swing',0,100,0,' %',1],['synarpsteps','ARP Steps',2,8,8,'',1],['synarpacc','ARP Accent',0,100,40,' %',1],
+['wahon','Wah',0,1,0,'',1],['wahmode','Wah Mode',0,2,0,'',1],['wahpos','Wah Pos',0,10,5,'',.1],['wahrate','Wah Rate',.1,10,1.5,' Hz',.1],['wahdepth','Wah Depth',0,10,6,'',.1],['wahq','Wah Res',0,10,5,'',.1],['wahmix','Wah Mix',0,100,100,' %',1],
+['midion','MIDI',0,1,0,'',1],['midich','MIDI Ch',0,16,0,'',1],['midiwheel','Mod Target',0,2,0,'',1],['midiwheelamt','Mod Amount',0,100,100,' %',1],['midinote','Note Synth',0,1,1,'',1],
+['aton','On',0,1,0,'',1],['atkey','Key',0,11,0,'',1],['atscale','Scale',0,8,0,'',1],['atspeed','Speed',0,100,72,'',1],['atamount','Amount',0,100,92,' %',1],['athuman','Humanize',0,100,18,' %',1],['atmix','Mix',0,100,100,' %',1],['attrack','Tracking',0,1,.78,'',.01],['atmode','Mode',0,2,1,'',1],['attrans','Transition',0,100,42,' %',1],['atvibrato','Vibrato',0,100,58,' %',1],['atguitar','Guitar Mode',0,1,1,'',1],['atglide','Glide',0,100,28,' %',1],['atbend','Bend Follow',0,100,55,' %',1],['atformant','Formant',0,100,22,' %',1],
 ['cabmix','IR mix',0,100,100,' %',1],['dist','Distance',0,10,3,'',.1],['pos','Position',0,10,4,'',.1],['angle','Angle',0,10,2,'',.1],['room','Room',0,10,1,'',.1],
 ['e1','Low',-15,15,0,' dB',.1],['e2','Low mid',-15,15,0,' dB',.1],['e3','Mid',-15,15,0,' dB',.1],['e4','High mid',-15,15,0,' dB',.1],['e5','High',-15,15,0,' dB',.1],
 ['f1','Freq',30,300,80,' Hz',1],['f2','Freq',120,800,300,' Hz',1],['f3','Freq',400,3000,1000,' Hz',1],['f4','Freq',1500,8000,3000,' Hz',10],['f5','Freq',3000,16000,8000,' Hz',10],
@@ -304,8 +317,9 @@ const CATS={};
 // The recipes are intentionally hand-shaped around gain staging, EQ balance, cabinet choice and playing use.
 const base={ingain:0,gate:-55,transpose:0,out:-6,gain:5,tight:5,bass:5,mid:5,treble:5,pres:5,depth:4,master:6,
  d_drive:3.2,d_tone:5.2,d_level:5.6,d_tight:6,b_gain:4.5,b_tone:5.5,b_level:5.5,c_sus:5,c_att:5,c_level:5,t_pitch:-2,t_blend:10,
- s_buzz:6,s_res:5,s_tone:6,s_mix:7,aton:0,atkey:0,atscale:0,atspeed:72,atamount:92,athuman:18,atmix:100,attrack:.78,cabmix:100,dist:3,pos:4,angle:2,room:1,e1:0,e2:0,e3:0,e4:0,e5:0,f1:80,f2:300,f3:1000,f4:3000,f5:8000,hpf:40,lpf:12000,
- mode:2,cab:2,mic:0,gateon:1,drvon:0,bston:0,cmpon:0,tunon:0,stron:0,synon:0,synmix:.75,synwave:0,synsub:.35,syncut:4200,synres:.18,synatt:8,syndec:120,synsus:.72,synrel:180,synoct:0,syntrk:.7,synstab:.75,syndrive:2,synspread:.22,synmod:.35,synvoice:2,synosc2:.65,syndetune:7,synpw:.5,synfilter:0,synenvamt:.55,synlforate:5,synlfodepth:.18,synglide:25,synnoise:.03,synarpon:0,synarprate:6,synarpgate:.72,synarpmode:0,synarpOct:1,synarpswing:0};
+ s_buzz:6,s_res:5,s_tone:6,s_mix:7,aton:0,atkey:0,atscale:0,atspeed:72,atamount:92,athuman:18,atmix:100,attrack:.78,atmode:1,attrans:42,atvibrato:58,atguitar:1,atglide:28,atbend:55,atformant:22,cabmix:100,dist:3,pos:4,angle:2,room:1,e1:0,e2:0,e3:0,e4:0,e5:0,f1:80,f2:300,f3:1000,f4:3000,f5:8000,hpf:40,lpf:12000,
+ mode:2,cab:2,mic:0,gateon:1,drvon:0,bston:0,cmpon:0,tunon:0,stron:0,synon:0,synmix:.75,synwave:0,synsub:.35,syncut:4200,synres:.18,synatt:8,syndec:120,synsus:.72,synrel:180,synoct:0,syntrk:.7,synstab:.75,syndrive:2,synspread:.22,synmod:.35,synvoice:2,synosc2:.65,syndetune:7,synpw:.5,synfilter:0,synenvamt:.55,synlforate:5,synlfodepth:.18,synglide:25,synnoise:.03,synarpon:0,synarprate:6,synarpgate:.72,synarpmode:0,synarpOct:1,synarpswing:0,synarpsteps:8,synarpacc:40,
+ wahon:0,wahmode:0,wahpos:5,wahrate:1.5,wahdepth:6,wahq:5,wahmix:100,midion:0,midich:0,midiwheel:0,midiwheelamt:100,midinote:1};
 const P=(name,v)=>[name,{...base,...v}];
 function add(cat,list){const existing=CATS[cat]||{};CATS[cat]=Object.assign({},existing,Object.fromEntries(list.map(x=>P(x[0],x[1]))))}
 add('CLEAN',[
@@ -546,8 +560,10 @@ function mk(id,fader){
   const show=()=>{const v=get(id),n=(v-mn)/(mx-mn);let label=v.toFixed(dec)+m.u;
     if(id==='synfilter')label=['LP','HP','BP'][Math.round(v)]||label;
     if(id==='synvoice')label=['Glass','Classic','Modern','Pluck','Air','FM','Pulse','Bass'][Math.round(v)]||label;
-    if(id==='synarpmode')label=['UP','DOWN','ALT','OCTAVE'][Math.round(v)]||label;
+    if(id==='synarpmode')label=['UP','DOWN','ALT','OCTAVE','TRILL','PEDAL','UP/DN'][Math.round(v)]||label;
     if(id==='atmode')label=['NATURAL','MODERN','HARD'][Math.round(v)]||label;
+    if(id==='wahmode')label=['CLASSIC','VOCAL','FUNK'][Math.round(v)]||label;
+    if(id==='midiwheel')label=['WAH','FILTER','DRIVE'][Math.round(v)]||label;
     kv.textContent=label;e.setAttribute('aria-valuenow',v);
     if(fader)cap.style.bottom=n*100+'%';else{kr.style.setProperty('--a',n*270+'deg');kb.style.transform='rotate('+(-135+n*270)+'deg)'}};
   let down=false,sy,sv;
@@ -570,12 +586,13 @@ function mount(root){
 }
 
 // pedals
-const G={drv:'<path d="M3 20 L12 20 Q18 4 22 4 Q26 4 32 20 L43 20"/>',bst:'<path d="M8 28 L23 10 L38 28 M8 36 L23 18 L38 36"/>',cmp:'<path d="M4 8 L42 18 M4 32 L42 22"/>',tun:'<path d="M23 6 V30 M12 20 L23 32 L34 20 M8 36 H38"/>',sit:'<circle cx="23" cy="31" r="7"/><path d="M23 24 V3 M19 8 H27 M20 13 H26 M20 18 H26 M17 5 L20 5 M26 5 L29 5"/>'};
+const G={drv:'<path d="M3 20 L12 20 Q18 4 22 4 Q26 4 32 20 L43 20"/>',bst:'<path d="M8 28 L23 10 L38 28 M8 36 L23 18 L38 36"/>',cmp:'<path d="M4 8 L42 18 M4 32 L42 22"/>',tun:'<path d="M23 6 V30 M12 20 L23 32 L34 20 M8 36 H38"/>',sit:'<circle cx="23" cy="31" r="7"/><path d="M23 24 V3 M19 8 H27 M20 13 H26 M20 18 H26 M17 5 L20 5 M26 5 L29 5"/>',wah:'<path d="M6 34 L17 8 L29 8 L40 34 Z M23 8 V34"/>'};
 const PEDS=[['drv','HZ DRIVE','linear-gradient(#2b2e33,#16181b)',['d_drive','d_tone','d_level','d_tight'],'drvon'],
 ['bst','HZ BOOST','linear-gradient(#262b36,#14171e)',['b_gain','b_tone','b_level'],'bston'],
 ['cmp','HZ COMP','linear-gradient(#26302f,#141a19)',['c_sus','c_att','c_level'],'cmpon'],
 ['tun','HZ DROP','linear-gradient(#302a2a,#191515)',['t_pitch','t_blend'],'tunon'],
-['sit','HZ SITAR','linear-gradient(#3d301b,#1d160c)',['s_buzz','s_res','s_tone','s_mix'],'stron']];
+['sit','HZ SITAR','linear-gradient(#3d301b,#1d160c)',['s_buzz','s_res','s_tone','s_mix'],'stron'],
+['wah','HZ WAH','linear-gradient(#2a2438,#15121e)',['wahpos','wahrate','wahdepth','wahq','wahmix'],'wahon']];
 $('peds').innerHTML=PEDS.map(([g,n,bg,ks,on])=>`<div class="ped" style="background:${bg}"><div class="rw">${ks.map(k=>`<div data-k="${k}"></div>`).join('')}</div><svg class="gl" viewBox="0 0 46 40">${G[g]}</svg><div class="nm">${n}</div><button class="fs" data-on="${on}" title="Footswitch"></button><i class="led" data-led="${on}"></i></div>`).join('');
 document.querySelectorAll('.fs').forEach(b=>{const id=b.dataset.on,l=b.parentNode.querySelector('.led');b.type='button';b.onclick=ev=>{ev.preventDefault();commit(id,get(id)>.5?0:1)};const s=()=>l.classList.toggle('on',get(id)>.5);onChange(id,s);s()});
 
@@ -633,7 +650,7 @@ onChange(['e1','e2','e3','e4','e5','f1','f2','f3','f4','f5','hpf','lpf'],eqDraw)
 
 // AutoTune readout / scale map
 const noteNames=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
-const scaleNames=['MAJOR','NAT MINOR','DORIAN','MIXOLYDIAN','PHRYGIAN','PHRYGIAN DOM'];
+const scaleNames=['MAJOR','NAT MINOR','DORIAN','MIXOLYDIAN','PHRYGIAN','PHRYGIAN DOM','HARM MINOR','MIN PENT','BLUES'];
 const scalePills=$('scalePills');
 scaleNames.forEach((n,i)=>{const b=document.createElement('button');b.type='button';b.textContent=n;b.onclick=ev=>{ev.preventDefault();commit('atscale',i)};scalePills.appendChild(b)});
 onChange(['atkey','atscale'],()=>{[...scalePills.children].forEach((b,i)=>b.classList.toggle('on',i===Math.round(get('atscale'))));});
@@ -657,12 +674,29 @@ const voiceNames=['GLASS','CLASSIC','MODERN','PLUCK','AIR','FM METAL','PULSE','B
 const sv=$('synvoice');
 voiceNames.forEach((n,i)=>{const b=document.createElement('button');b.type='button';b.textContent=n;b.onclick=ev=>{ev.preventDefault();commit('synvoice',i)};sv.appendChild(b)});
 onChange('synvoice',()=>[...sv.children].forEach((b,i)=>b.classList.toggle('on',i===Math.round(get('synvoice')))));
-const arpModes=['UP','DOWN','ALT','OCTAVE'];
-const arpModeEl=document.querySelector('[data-k=\"synarpmode\"]');
 const arpLights=[...document.querySelectorAll('#arpLights i')];
-let arpAnim=0;
-function arpPaint(){const on=get('synarpon')>.5;arpLights.forEach((e,i)=>e.classList.toggle('on',on && i===Math.floor((performance.now()/1000)*get('synarprate'))%8));document.querySelectorAll('[data-k=\"synarpmode\"] .kv').forEach(e=>e.textContent=arpModes[Math.round(get('synarpmode'))]||'UP');}
-setInterval(arpPaint,70);
+// Mirror the engine step clock so the lights land on the beat the synth plays: same
+// rate, same swing weighting on odd steps, same gate ratio and 4-step accent shape.
+let arpPhase=0,arpStep=0,arpLast=0;
+function arpPaint(){
+  const now=performance.now(),dt=Math.min(.25,(now-arpLast)/1000);arpLast=now;
+  const on=get('synarpon')>.5,steps=Math.max(2,Math.min(8,Math.round(get('synarpsteps'))));
+  const rate=Math.max(.5,Math.min(20,get('synarprate'))),swing=get('synarpswing')*.01;
+  const gate=Math.max(.1,Math.min(1,get('synarpgate'))),acc=get('synarpacc')*.01;
+  if(on){
+    const pr=rate*(arpStep&1?(1-.32*swing):(1+.32*swing));
+    arpPhase+=pr*dt;
+    while(arpPhase>=1){arpPhase-=1;arpStep=(arpStep+1)%steps}
+  }else{arpPhase=0;arpStep=0}
+  const lit=Math.floor(arpStep)%8;
+  arpLights.forEach((e,i)=>{
+    const active=on&&i===lit&&arpPhase<gate;
+    const accent=(i%4===0)?(1+.35*acc):(1-.08*acc);
+    e.classList.toggle('on',active);
+    e.style.opacity=on?(active?String(Math.min(1,.55+.45*accent)):'0.22'):'';
+  });
+}
+setInterval(arpPaint,60);
 const sc=$('sync'),sx=sc.getContext('2d');
 function synthDraw(){
   const W=sc.width,H=sc.height;sx.clearRect(0,0,W,H);
@@ -690,27 +724,43 @@ onChange(['synwave','synvoice','syncut','synres','synmod','synpw','synlfodepth',
 
 // presets + A/B
 {const o=document.createElement('option');o.textContent='Select preset…';o.value='';$('preset').appendChild(o)}
-Object.entries(CATS).forEach(([c,ps])=>{const g=document.createElement('optgroup');g.label=c;Object.keys(ps).forEach(k=>{const o=document.createElement('option');o.textContent=k;o.value=k;g.appendChild(o)});$('preset').appendChild(g)});
+Object.entries(CATS).forEach(([c,ps])=>{const g=document.createElement('optgroup');g.label=c;Object.keys(ps).forEach(k=>{const o=document.createElement('option');o.textContent=k;o.value=k;o.dataset.cat=c;g.appendChild(o)});$('preset').appendChild(g)});
 const presetNames=Object.keys(PRE);$('presetCount').textContent=presetNames.length+' PRESETS';
 const snap=()=>Object.fromEntries(D.map(d=>[d[0],get(d[0])])),restore=o=>putMany(o);
-let presetBusy=false;\nconst load=n=>{\n if(presetBusy)return; presetBusy=true;if(!PRE[n])return;const b={};D.forEach(([id,,,,df])=>{if(!/on$/.test(id)||id==='gateon')b[id]=df});b.drvon=1;b.bston=0;b.cmpon=0;b.tunon=0;b.stron=0;b.synon=0;b.aton=0;b.atkey=0;b.atscale=0;b.t_pitch=-2;restore({...b,...PRE[n]});$('preset').value=n};
+const clone=o=>Object.assign({},o);
+const abNote=n=>{const e=$('abNote');if(e)e.textContent=n};
+// Loading a preset first resets every effect on/off to a neutral state so a preset
+// cannot inherit a stray bypass from the previous patch, then applies the recipe.
+const load=n=>{if(!PRE[n])return;const b={};D.forEach(([id,,,,df])=>{if(!/on$/.test(id)||id==='gateon')b[id]=df});
+  b.drvon=1;b.bston=0;b.cmpon=0;b.tunon=0;b.stron=0;b.synon=0;b.aton=0;b.atkey=0;b.atscale=0;b.t_pitch=-2;
+  b.wahon=0;b.midion=0;b.midinote=1;
+  restore({...b,...PRE[n]});
+  const s=$('preset');if(s)s.value=n;
+  const sel=s&&s.selectedOptions&&s.selectedOptions[0];
+  const cat=sel&&sel.dataset?sel.dataset.cat:'';
+  const pc=$('presetCount');if(pc&&cat)pc.textContent=cat;
+  if(sl[cur])sl[cur]=snap();   // keep the active A/B slot in sync
+  abNote('PRESET: '+n.toUpperCase())};
 $('preset').onchange=ev=>{if(ev.target.value)load(ev.target.value)};
 const stepP=d=>{const s=$('preset');if(!presetNames.length)return;let i=presetNames.indexOf(s.value);if(i<0)i=d>0?0:presetNames.length-1;else i=(i+d+presetNames.length)%presetNames.length;load(presetNames[i])};
 $('prev').type='button';$('next').type='button';$('prev').onclick=ev=>{ev.preventDefault();stepP(-1)};$('next').onclick=ev=>{ev.preventDefault();stepP(1)};
-const sl={a:snap(),b:null};let cur='a';
-const refreshAB=()=>{$('ab-a')?.classList.toggle('on',cur==='a');$('ab-b')?.classList.toggle('on',cur==='b')};
-const pick=s=>{
- if(s===cur)return;
- sl[cur]=snap();
- cur=s;
- if(!sl[s]) sl[s]=sl[cur==='a'?'b':'a'];
- restore(sl[s]||snap());
- refreshAB();
-};
+// A/B compare: each slot holds a full snapshot. Switching snapshots the slot we are
+// leaving, restores the slot we are entering, and keeps both slots populated so a
+// fresh session always has an A and a B to compare against.
+const sl={a:null,b:null};let cur='a';
+const setAB=on=>{$('ab-a')?.classList.toggle('on',on==='a');$('ab-b')?.classList.toggle('on',on==='b')};
+const pick=s=>{if(s===cur){abNote('A/B: '+s.toUpperCase());return}
+  sl[cur]=snap();
+  if(!sl[s])sl[s]=clone(sl[cur]);   // entering a slot for the first time copies the current sound
+  cur=s;restore(sl[s]);setAB(s);abNote('A/B: '+s.toUpperCase())};
+// Copy the currently shown snapshot into the other slot, then jump to it. This is
+// the "A=B, then tweak B" workflow used for comparing two versions of a tone.
+const copyAB=()=>{const other=cur==='a'?'b':'a';sl[cur]=snap();sl[other]=clone(sl[cur]);pick(other);abNote('Copied '+cur.toUpperCase()+' → '+other.toUpperCase())};
 $('ab-a').type='button';$('ab-b').type='button';
 $('ab-a').onclick=e=>{e.preventDefault();pick('a')};
 $('ab-b').onclick=e=>{e.preventDefault();pick('b')};
-refreshAB();
+const abCopy=$('abCopy');if(abCopy){abCopy.type='button';abCopy.onclick=e=>{e.preventDefault();copyAB()}}
+sl.a=snap();sl.b=clone(sl.a);setAB('a');abNote('A/B: A');
 eqDraw();
 
 // meters, host automation and IR name come from the plugin by polling

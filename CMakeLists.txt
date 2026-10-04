@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.22)
 # static MSVC runtime -> no VC++ redistributable needed on the target PC
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
-project(SishhinHZMachine VERSION 2.0.0 LANGUAGES C CXX)
+project(SishhinHZMachine VERSION 1.10.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
